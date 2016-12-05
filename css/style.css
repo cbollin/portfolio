@@ -1,1 +1,79 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+  font-size: 2em;
+  font-family: 'Open Sans', serif;
+  color: #fff;
+  margin:0;
+  padding-top: .6em;
+}
+.intro p{
+  color: #fff;
+  font-family: 'Open Sans', serif;
+}
+img{
+  width: 22em;
+  height: 20em;
+}
+.logo{
+  width: 9.5em;
+  height: 10em;
+}
+.downarrow{
+  width: 2em;
+  height: 2em;
+  float: right;
+  padding-right: 2em;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+}
+#section1 img{
+    width: auto;
+    height: auto;
+}
+
+
+/* Fixed header
+* --------------------------------------- */
+#header{
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+}
+
+#header{
+  top:0px;
+}
+#header img{
+  width: 2em;
+  height: 2em;
+  margin-left: 1em;
+}
+#section0{
+  background-image: url(../imgs/seattle8.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu {
+  bottom: 80px;
+}
+#infoMenu li a {
+  color: #fff;
+  z-index: 999;
+}
