@@ -1,20 +1,19 @@
-
-/* Style for our header texts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*
 * --------------------------------------- */
-h1{
-  font-size: 2em;
+h1, p{
   font-family: 'Open Sans', serif;
   color: #fff;
+}
+h1{
+  font-size: 2em;
   margin:0;
   padding-top: .6em;
 }
-.intro p{
+.scroll{
+  width: 1em;
+  height: 1em;
   color: #fff;
-  font-family: 'Open Sans', serif;
-}
-img{
-  width: 22em;
-  height: 20em;
 }
 .logo{
   width: 9.5em;
@@ -27,16 +26,87 @@ img{
   padding-right: 2em;
 }
 
-/* Centered texts in each section
+/* Section Specific
 * --------------------------------------- */
 .section{
   text-align:center;
 }
-#section1 img{
-    width: auto;
-    height: auto;
+#section0{
+  background-image: url(../imgs/seattle8.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+#section0 a{
+  color: #fff;
 }
 
+#section1 .rows{
+  width: 100%;
+  height: auto;
+}
+#section1 .rows img{
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+/*section 3*/
+#section3 img{
+    width: 33%;
+    height: auto;
+    border-radius: 20px;
+    padding-bottom: .6em;
+}
+#section3 p, h1, h3, h4, h5{
+  font-family: 'Open Sans', serif;
+  margin:0;
+  color: #333;
+}
+#section3 p{
+  font-size: 1em;
+  padding-top: .6em;
+  /*text-align: left;*/
+}
+#section3 h1{
+  font-size: 2em;
+  padding-bottom: .3em;
+}
+#section3 h2{
+  font-family: 'Open Sans', serif;
+  color: #fff;
+  margin:0;
+}
+
+#section3 h2, h3{
+  font-size: 1em;
+  padding-bottom: .1em;
+}
+#section3 h3{
+  font-size: 1.2em;
+}
+#section3 h4{
+  font-size: 1em;
+}
+#section3 h5{
+  font-size: .8em;
+}
+/*middle containers*/
+.container {
+    font-size: 0;
+    width: 100%;
+}
+.container > div {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    /*background-color: white;*/
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2%;
+}
 
 /* Fixed header
 * --------------------------------------- */
@@ -48,8 +118,11 @@ img{
   background: #333;
   z-index:9;
   text-align:center;
-  color: #f2f2f2;
   padding: 20px 0 0 0;
+}
+#header a{
+  color: #f2f2f2;
+  padding: 4px;
 }
 
 #header{
@@ -59,21 +132,4 @@ img{
   width: 2em;
   height: 2em;
   margin-left: 1em;
-}
-#section0{
-  background-image: url(../imgs/seattle8.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-}
-
-/* Bottom menu
-* --------------------------------------- */
-#infoMenu {
-  bottom: 80px;
-}
-#infoMenu li a {
-  color: #fff;
-  z-index: 999;
 }

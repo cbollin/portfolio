@@ -6,46 +6,62 @@
     <title>Cassidy Bollin</title>
     <meta name="author" content="Cassidy Bollin" />
     <meta name="description" content="fullPage fixed header." />
-    <meta name="keywords" content="fullpage,jquery,demo,screen,fixed,header,absolute, positioned,css" />
+    <meta name="keywords" content="fullpage,jquery,portfolio,screen,fixed,header,absolute,positioned,css" />
     <meta name="Resource-type" content="Document" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-<!-- Header -->
+    <!-- Header -->
     <div id="header">
-        <a href="https://www.linkedin.com/in/cassidy-bollin"><img src="imgs/link.png" alt="linkedin"></a>
-        <a href="https://github.com/cbollin"><img src="imgs/git.png" alt="github"></a>
-        <a href="mailto:cassidybollin32@gmail.com"><img src="imgs/email.png" alt="email"></a>
+      <a href="https://www.linkedin.com/in/cassidy-bollin"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a href="https://github.com/cbollin"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+      <a href="mailto:cassidybollin32@gmail.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
     </div>
 
-<!-- Section 1 -->
+    <!-- Section 1 -->
     <div id="fullpage">
         <div class="section" id="section0">
             <div class="intro">
                 <img src="imgs/cb5.png" alt="cblogo" class="logo">
-                <p>Full stack web developer, with MongoDB, Express, Angular and Node.js.</p>
+                <p>Hi, I'm Cassidy, Full Stack Web Developer</p>
+                <a href="#Skills"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="section" id="section1">
-            <div class="slide" id="slide1">
+            <!-- <div class="slide" id="slide1"> -->
                 <div class="intro">
                     <h1>Skills and Expertise</h1>
-                    <p>My skills include the full Mean stack and many more modern frameworks.</p>
-                    <img src="imgs/mongo.png" alt="mongo">
-                    <img src="imgs/express.png" alt="express">
-                    <img src="imgs/angular.png" alt="angular">
-                    <img src="imgs/node.png" alt="node">
+                    <div class="rows">
+                    <img src="imgs/skills/mongo1.png" alt="mongo">
+                    <img src="imgs/skills/express1.png" alt="express">
+                    <img src="imgs/skills/angular1.png" alt="angular">
+                    <img src="imgs/skills/node1.png" alt="node">
+                    </div>
+                    <div class="rows">
+                    <img src="imgs/skills/html51.png" alt="mongo">
+                    <img src="imgs/skills/premiere1.png" alt="mongo">
+                    <img src="imgs/skills/ps1.png" alt="mongo">
+                    <img src="imgs/skills/wp1.png" alt="mongo">
+                    </div>
+                    <div class="rows">
+                    <img src="imgs/skills/c1.png" alt="mongo">
+                    <img src="imgs/skills/dotnet1.png" alt="mongo">
+                    <img src="imgs/skills/unity1.png" alt="mongo">
+                    </div>
+                    <div class="rows">
+                    <img src="imgs/skills/python1.png" alt="mongo">
+                    <img src="imgs/skills/django1.png" alt="mongo">
+                  </div>
                 </div>
-            </div>
-
-            <div class="slide" id="slide2">
+            <!-- </div> -->
+            <!-- <div class="slide" id="slide2">
                 <h1>Slide 2</h1>
-            </div>
-<!-- Section 2 -->
+            </div> -->
         </div>
+        <!-- Section 2 -->
         <div class="section" id="section2">
             <div class="intro">
                 <h1>Selected Projects</h1>
@@ -53,25 +69,44 @@
                 <a href="https://drive.google.com/uc?export=download&id=0B_XkaiOGuF3Sb2ZFakZSSGpjWlUwejF1RTRHSHFUS0RTV3RB"><img src="imgs/resume.png" alt="resume"></a>
             </div>
         </div>
-<!-- Section 3 -->
+        <!-- Section 3 -->
         <div class="section" id="section3">
             <div class="intro">
                 <h1>Professional Timeline</h1>
-                <p>I have 6+ years professional industy experience, working with startups to large corporations.</p>
-                <h2>Content Development Coordinator</h2>
-                <p>• Revitalized the design of Grantham’s online content increasing engagement 20% • Leveraged HTML/CSS/JS and adobe suite to create web content for the entire nursing and science programs • Communicated with Deans, designers and professors
-                    to ensure their vision of each course could come to fruition
-                </p>
-                <a href="https://drive.google.com/uc?export=download&id=0B_XkaiOGuF3Sb2ZFakZSSGpjWlUwejF1RTRHSHFUS0RTV3RB"><img src="imgs/resume.png" alt="resume"></a>
+                <h2><b>I have 6+ years professional industy experience and training in full stack development.</b></h2>
+                <div class="container">
+                    <div>
+                        <img src="imgs/gu1.png" alt="resume">
+                        <h3>Content Development Coordinator</h3>
+                        <h4><i>Grantham University</i></h4>
+                        <h5><i>Jan 13 - May 16</i></h5>
+                        <p>Revitalized online content leveraging HTML/CSS/JS and Adobe Suite to create modern web content for the nursing and science programs.</p>
+                    </div>
+                    <div>
+                        <img src="imgs/entercom2.png" alt="resume" id="cool">
+                        <h3>Digital Developer</h3>
+                        <h4><i>Entercom Communications</i></h4>
+                        <h5><i>Feb 12 - Jan 13</i></h5>
+                        <p>Content creation and management for diverse demographics spanning 6 radio stations. Included: banners, logos and targeted emails utilizing Adobe Suite and Wordpress.</p>
+                    </div>
+                    <div>
+                        <img src="imgs/dojo.png" alt="resume" id="cool">
+                        <h3>Full Stack Dev Training</h3>
+                        <h4><i>Coding Dojo</i></h4>
+                        <h5><i>July 16 - Nov 16</i></h5>
+                        <p>Immersive bootcamp training which included over 1200 hours of full stack development in Python, Javascript and C#.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-<!-- Script Time -->
+    <!-- Script Time -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
+
 </html>
