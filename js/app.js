@@ -7,4 +7,16 @@ $(document).ready(function() {
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'Skills', 'Projects', 'Timeline']
     });
+    $('[data-toggle="tooltip"]').tooltip();
 });
+$("i").hover(
+    function() {
+        $(this).stop().animate({
+            "opacity": ".5"
+        }, "fast");
+    },
+    function() {
+        $(this).stop().animate({
+            "opacity": "1"
+        }, "slow");
+    });
