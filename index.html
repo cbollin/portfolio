@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cassidy Bollin</title>
     <meta name="author" content="Cassidy Bollin" />
     <meta name="description" content="fullPage fixed header." />
     <meta name="keywords" content="fullpage,jquery,portfolio,screen,fixed,header,absolute,positioned,css" />
     <meta name="Resource-type" content="Document" />
+    <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'>
+
 </head>
 
 <body>
@@ -28,14 +31,15 @@
     <!-- Section 1 -->
     <div id="fullpage">
         <div class="section" id="section0">
-            <img class="img-responsive" src="imgs/cb4.jpg" alt="cblogo" style="background-color:none;">
-            <h3>Cassidy Bollin</h3>
-            <h5>Full Stack Web Developer</h5>
+            <img class="img-responsive" src="https://i.imgur.com/ww4AfeR.jpg" alt="cblogo" style="background-color:none;">
+            <h1>Cassidy Bollin</h1>
+            <h2>Full Stack Web Developer</h2>
             <a href="#Skills"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></a>
         </div>
         <div class="section" id="section1">
             <div class="container-fluid">
                 <h1>Skills and Expertise</h1>
+                <hr>
                 <div class="row">
                     <i class="devicon-html5-plain-wordmark devimgs"></i>
                     <i class="devicon-css3-plain-wordmark devimgs"></i>
@@ -66,62 +70,86 @@
 
         <!-- Section 2 -->
         <div class="section" id="section2">
-          <div class="container-fluid">
-            <h1>Selected Projects</h1>
-            <div class="col-md-4">
-                <img class="gif" src="imgs/game.png" alt="gamedemo">
-                <h4>2D Action RPG</h4>
-                <p>C# | Tiled | Unity</p>
+            <div class="container">
+                <h1>Selected Projects</h1>
+                <hr>
+                <div class="col-md-4">
+                    <h4>Pizza Ordering App</h4>
+                    <img id="piz" class="img-responsive" src="https://i.imgur.com/jJvlD3Q.png" onclick="document.getElementById('piz').src='https://i.imgur.com/D81BpGl.gif'">
+                    <p><button type="button" class="btn btn-primary btn-sm" onclick="document.getElementById('piz').src='https://i.imgur.com/jJvlD3Q.png'">Stop Animation</button></p>
+                    <p>Python | Flask | MySQL | FullpageJS | Materialize</p>
+                    <a href="https://github.com/cbollin/pizza_party"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h4>2D Action RPG</h4>
+                    <img id="rpg" class="img-responsive" src="https://i.imgur.com/gBQAtlc.png" onclick="document.getElementById('rpg').src='https://i.imgur.com/pkCyAvP.gif'">
+                    <p><button type="button" class="btn btn-primary btn-sm" onclick="document.getElementById('rpg').src='https://i.imgur.com/gBQAtlc.png'">Stop Animation</button></p>
+                    <p>C# | Tiled | Unity</p>
+                    <a href="https://github.com/cbollin/Csharp_unity_games"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h4 data-toggle="tooltip" data-placement="top" title="Hooray!">Wizards Duel</h4>
+                    <img id="wiz" class="img-responsive" src="https://i.imgur.com/EvQSozv.png" onclick="document.getElementById('wiz').src='https://i.imgur.com/AgaGP5d.gif'">
+                    <p><button type="button" class="btn btn-primary btn-sm" onclick="document.getElementById('wiz').src='https://i.imgur.com/EvQSozv.png'">Stop Animation</button></p>
+                    <p>Python | Django</p>
+                    <a href="https://github.com/cbollin/wizards_duel"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <br>
             </div>
-            <div class="col-md-4">
-                <img class="gif" src="imgs/pizza.png" alt="pizzademo">
-                <h4>Pizza Ordering App</h4>
-                <p>Python | Flask | MySQL | FullpageJS | Materialize</p>
-            </div>
-            <div class="col-md-4">
-                <img class="gif" src="imgs/pizza.png" alt="pizzademo">
-                <h4>Pizza Ordering App</h4>
-                <p>Python | Flask | MySQL | FullpageJS | Materialize</p>
-            </div>
-            <br>  
         </div>
-      </div>
 
         <!-- Section 3 -->
         <div class="section" id="section3">
-            <div class="container-fluid">
+            <div class="container">
                 <h1>Professional Timeline</h1>
+                <hr>
                 <p class="lead">I have 6+ years professional industy experience and training in full stack development.</p>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="imgs/gu1.png" alt="granthamlogo">
-                    <h4>Content Development Coordinator</h4>
-                    <h5><i>Grantham University</i></h5>
-                    <h6><i>Jan 13 - May 16</i></h6>
-                    <p>Revitalized online content leveraging HTML/CSS/JS and Adobe Suite to create modern web content for the nursing and science programs.</p>
+                    <div class="workpadding">
+                        <img class="img-responsive" src="https://i.imgur.com/NajCU6i.png" alt="granthamlogo">
+                        <h4>Content Development Coordinator</h4>
+                        <h5><i>Grantham University</i></h5>
+                        <h6><i>Jan 13 - May 16</i></h6>
+                        <p>Revitalized online content leveraging HTML/CSS/JS and Adobe Suite to create modern web content for the nursing and science programs.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="imgs/entercom2.png" alt="entercomlogo">
-                    <h4>Digital Developer</h4>
-                    <h5><i>Entercom Communications</i></h5>
-                    <h6><i>Feb 12 - Jan 13</i></h6>
-                    <p>Content creation and management for diverse demographics spanning 6 radio stations. Included: banners, web design, video editing and targeted emails.</p>
+                    <div class="workpadding">
+                        <img class="img-responsive" src="https://i.imgur.com/MD671IG.png" alt="entercomlogo">
+                        <h4>Digital Developer</h4>
+                        <h5><i>Entercom Communications</i></h5>
+                        <h6><i>Feb 12 - Jan 13</i></h6>
+                        <p>Content creation and management for diverse demographics spanning 6 radio stations. Included: banners, web design, video editing and targeted emails.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="imgs/dojo.png" alt="dojologo">
-                    <h4>Full Stack Dev Training</h4>
-                    <h5><i>Coding Dojo</i></h5>
-                    <h6><i>July 16 - Nov 16</i></h6>
-                    <p>Immersive bootcamp training which included over 1200 hours of full stack development in Python, Javascript and C#.</p>
+                    <div class="workpadding">
+                        <img class="img-responsive" src="https://i.imgur.com/xmerY1q.png" alt="dojologo">
+                        <h4>Full Stack Dev Training</h4>
+                        <h5><i>Coding Dojo</i></h5>
+                        <h6><i>July 16 - Nov 16</i></h6>
+                        <p>Immersive bootcamp training which included over 1200 hours of full stack development in Python, Javascript and C#.</p>
+                        <br>
+                    </div>
                 </div>
             </div>
-            <a href="https://drive.google.com/uc?export=download&id=0B_XkaiOGuF3Sb2ZFakZSSGpjWlUwejF1RTRHSHFUS0RTV3RB"><i class="fa fa-download devimgs" aria-hidden="true"></i></a>
-
+        </div>
+        <div class="section" id="section4">
+            <div id="section4contact">
+                <img class="img-responsive small" src="https://i.imgur.com/agebpBD.jpg" alt="self">
+                <h3>Contact Me</h3>
+                <p>Currently pursuing employment in the Greater Seattle Area</p>
+                <p>hello@cbollin.com</p>
+                <p>816-405-2693</p>
+                <p>
+                    <a href="https://drive.google.com/uc?export=download&id=0B_XkaiOGuF3Sb2ZFakZSSGpjWlUwejF1RTRHSHFUS0RTV3RB"><i class="fa fa-download devimgs" aria-hidden="true" alt="resume"></i></a></p>
+            </div>
         </div>
     </div>
     </div>
     <!-- Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
